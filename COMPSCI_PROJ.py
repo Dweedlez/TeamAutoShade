@@ -8,7 +8,7 @@ from Tkinter import *     #import tkinter for gui
 import time                  # this is used for autoupdating gui which will be used for auto mode
 import serial                # this is used to communicate with arduino via usb serial port
 
-inputData = serial.Serial('COM5', 9600)                                        #any data sent or recieved is tied to this variable
+inputData = serial.Serial('COM5', 9600) #any data sent or recieved is tied to this variable/change 'COM5' to whatever port your arduino is plugged in to
 class App(Frame):                                                                      # develops the frame work for our gui
     def __init__(self, master):
         Frame.__init__(self, master)
